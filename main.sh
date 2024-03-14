@@ -9,7 +9,7 @@ red='\033[0;31m'
 green='\033[0;32m'
 default='\033[0m'
 
-echo "Started script"
+echo -e "${red}Started script${default}"
 
 count=$((count + 0))
 
@@ -25,7 +25,7 @@ while [[ $count -le 200 ]]; do
     count=$((count + 1))
 done
 
-# git branch -M main
-# git push -u origin main -f
+git branch -M main
+git push -u origin main -f
 
-echo "Completed script"
+echo -e "${red}Completed script${default}"
