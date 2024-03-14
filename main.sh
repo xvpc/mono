@@ -29,3 +29,5 @@ git branch -M main
 git push -u origin main -f
 
 echo -e "${red}Completed script${default}"
+sleep 5 
+kill $! 
