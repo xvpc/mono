@@ -13,11 +13,12 @@ count=$((count + 0))
 git init
 git "remote add origin ${REPO_LINK}"
 
-while [[ $count -le 201 ]]; do
+while [[ $count -le 200 ]]; do
     formatted_date="${current_date} | ${count}"
     echo "$formatted_date" >> commit.txt 
     git add *
     git commit -m "${current_date}"
+    echo "$formatted_date"
     count=$((count + 1))
 done
 
