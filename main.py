@@ -15,6 +15,7 @@ now = datetime.datetime.now()
 
 f = open("commit.txt", "w")
 os.system("git init")
+os.system(f"git remote add origin {repo_link}")
 
 pointer = 0
 
